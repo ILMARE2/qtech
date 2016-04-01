@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.compus"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 打开手电筒 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <!-- 天气预报 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <!-- 百度地图权限 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <!-- 语音识别权限 -->
+    <!-- 连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- for all -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- for PayPal -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.android.compus.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.android.compus.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.compus.GuideActivity" >
+        </activity>
+        <activity android:name="com.android.compus.LoginActivity" >
+        </activity>
+        <activity android:name="com.android.compus.RegisterActivity" >
+        </activity>
+        <activity android:name="com.android.compus.MainActivity" >
+            <intent-filter>
+                <action android:name="com.android.compus.main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.compus.MineInfoActivity" >
+        </activity>
+        <activity android:name="com.android.compus.MineInfoEditActivity" >
+        </activity>
+        <activity android:name="com.android.compus.MineSoftActivity" >
+        </activity>
+        <activity android:name="com.android.compus.FeedBackActivity" >
+        </activity>
+        <activity android:name="com.android.compus.AddNewsActivity" >
+        </activity>
+        <activity android:name="com.android.compus.NewsActivity" >
+        </activity>
+        <activity android:name="com.android.compus.AddSecondGoodActivity" >
+        </activity>
+        <activity android:name="com.android.compus.SecondGoodDetailActivity" >
+        </activity>
+        <activity android:name="com.android.compus.AddLostActivity" >
+        </activity>
+        <activity android:name="com.android.compus.ShopAllActivity" >
+        </activity>
+        <activity android:name="com.android.compus.AddShopActivity" >
+        </activity>
+        <activity android:name="com.android.compus.ShopItemActivity" >
+        </activity>
+        <activity android:name="com.android.compus.OrderActivity" >
+        </activity>
+        <activity android:name="com.android.compus.OrderInfoActivity" >
+        </activity>
+        <activity android:name="com.android.compus.WeatherScreen" >
+        </activity>
+        <activity android:name="com.android.compus.LocateActivity" >
+        </activity>
+        <activity android:name="com.android.compus.GradeQueryActivity" >
+        </activity>
+        <activity android:name="com.android.compus.MyNoteMainActivity" >
+        </activity>
+        <activity android:name="com.android.compus.WriteNoteActivity" >
+        </activity>
+        <activity android:name="com.android.compus.EditNoteActivity" >
+        </activity>
+        <activity android:name="com.android.compus.VoiceRobotActiviity" >
+        </activity>
+        <activity android:name="com.android.compus.BaiduMapActivity" >
+        </activity>
+        <activity android:name="com.android.compus.PoiSearchNearByActivity" >
+        </activity>
+        <activity android:name="com.android.compus.CalendarActivity" >
+        </activity>
+        <activity android:name="com.android.compus.SchoolInfoActivity" >
+        </activity>
+        <activity android:name="com.android.compus.StudentGuideActivity" >
+        </activity>
+        <activity android:name="com.android.compus.DomActivity" >
+        </activity>
+        <activity android:name="com.android.compus.pay.ShoppingCartActivity" >
+        </activity>
+
+        <!-- WXPay sdk begin -->
+        <activity
+            android:name="cn.beecloud.BCWechatPaymentActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity-alias
+            android:name="com.android.compus.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="cn.beecloud.BCWechatPaymentActivity" />
+        <!-- WXPay sdk end -->
+
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- alipay sdk end -->
+
+
+        <!-- union pay sdk begin -->
+        <activity
+            android:name="cn.beecloud.BCUnionPaymentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- union pay sdk end -->
+
+
+        <!-- PayPal start -->
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity
+            android:name="cn.beecloud.BCPayPalPaymentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- PayPal end -->
+
+        <activity
+            android:name="com.android.compus.pay.BillListActivity"
+            android:label="@string/title_activity_bill_list" >
+        </activity>
+        <activity
+            android:name="com.android.compus.pay.RefundOrdersActivity"
+            android:label="@string/title_activity_refund_orders" >
+        </activity>
+        <activity
+            android:name="com.android.compus.pay.RefundStatusActivity"
+            android:label="@string/title_activity_refund_status" >
+        </activity>
+        <activity
+            android:name="com.android.compus.pay.GenQRCodeActivity"
+            android:label="@string/title_activity_gen_qrcode" >
+        </activity>
+        <activity
+            android:name="com.android.compus.pay.ALIQRCodeActivity"
+            android:label="@string/title_activity_aliqrcode" >
+        </activity>
+        <activity
+            android:name="com.android.compus.pay.OrdersEntryActivity"
+            android:label="@string/title_activity_orders_entry" >
+        </activity>
+        <activity
+            android:name="com.android.compus.pay.PayPalUnSyncedListActivity"
+            android:label="@string/title_activity_pay_pal_un_synced_list" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XxvsXSiEEm3dP0FVNoxr3kAQ" />
+    </application>
+
+</manifest>

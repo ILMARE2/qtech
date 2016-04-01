@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit"
+          android:icon="@android:drawable/ic_menu_search"
+          android:title="编辑" />
+    <item android:id="@+id/delete"
+          android:icon="@android:drawable/ic_menu_add"
+          android:title="删除" />
+</menu>
+<!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/menu/second.xml -->

@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.android.compus"
+        minSdkVersion 15
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':slidingMenLibrary')
+    compile project(':xUtilsLibrary')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/alipaysdk.jar')
+    compile files('libs/alipaysecsdk.jar')
+    compile files('libs/alipayutdid.jar')
+    compile files('libs/baidumapapi_v3_3_0.jar')
+    compile files('libs/beecloud.jar')
+    compile files('libs/bmob_v3.1.0beta.jar')
+    compile files('libs/bmobPush_0.1beta.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/locSDK_5.0.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/mta-sdk-1.0.0.jar')
+    compile files('libs/open_sdk.jar')
+    compile files('libs/PayPalAndroidSDK-2.9.11.jar')
+    compile files('libs/Sunflower.jar')
+    compile files('libs/UPPayAssistEx.jar')
+    compile files('libs/UPPayPluginEx.jar')
+    compile files('libs/zxing-3.2.0.jar')
+}

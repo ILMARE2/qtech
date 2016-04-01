@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#F2F2F2">
+    
+        <com.android.compus.view.RefreshListView
+            android:id="@+id/list_lost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+        	android:listSelector="@drawable/nothing"
+        	android:divider="@android:color/transparent"
+        	 >
+        </com.android.compus.view.RefreshListView>
+            
+         
+</LinearLayout>
+<!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/pager_lost_found.xml -->

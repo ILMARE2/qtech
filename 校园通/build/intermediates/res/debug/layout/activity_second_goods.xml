@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/header_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+
+            <TextView
+                android:id="@+id/tv_secondgood_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="关于申报2015年国家级大学生创新创业训练项目的通知"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+         
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="发布日期"
+                android:textColor="#FF8C00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_secondgood_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="教务处"
+                android:textSize="12sp" />
+        
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="商品价格"
+                android:textColor="#FF8C00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_secondgood_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="¥25"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="商品描述"
+                android:textColor="#FF8C00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_secondgood_describ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="各相关部门：
+   现将山东省教育厅《关于印发山东省普通高等学校本科教学工作审核评估实施方案的通知》和《关于普通高等学校编制发布2014年本科教学质量报告的通知》上传，供撰写过程中学习、参照。                                                                         
+ \n\r教务处\n\r
+ 2015年4月3日 "
+                android:textSize="12sp" />
+
+            
+
+            
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="联系电话"
+                android:textColor="#FF8C00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_secondgood_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="jksghdg"
+                android:textSize="12sp" />
+
+           
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="相关图片"
+                android:textColor="#FF8C00"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_second_good"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="2014/5/2"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/activity_second_goods.xml -->

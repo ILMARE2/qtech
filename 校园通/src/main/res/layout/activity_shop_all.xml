@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_shop_all"
+        layout="@layout/header_title" />
+
+    
+    <!--	
+        setSelector  点击显示的颜色
+		setCacheColorHint  拖拽的颜色	
+		setDivider  每个条目的间隔	的分割线	
+		
+     	android:cacheColorHint="" 
+        android:listSelector=""
+        android:divider=""   -->
+        
+    <ListView
+        android:id="@+id/lv_shop_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:smoothScrollbar="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/nothing"
+        android:divider="@drawable/nothing" >
+    </ListView>
+
+</LinearLayout>

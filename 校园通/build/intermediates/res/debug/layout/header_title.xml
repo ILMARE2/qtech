@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#17B3EC"
+    android:padding="3dp" >
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="返回"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:text="软件相关"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+  
+        android:padding="5dp"
+        android:text="编辑"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:typeface="monospace" 
+        android:visibility="gone"/>
+
+</RelativeLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/header_title.xml -->

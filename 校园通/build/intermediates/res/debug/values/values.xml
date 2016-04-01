@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="bluebg">#007edf</color>
+    <color name="fontgrey">#999999</color>
+    <color name="greybg">#EEEEEE</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="item_divider">#ffd7d7d7</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/><enum name="none" value="2"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/><enum name="none" value="2"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
+    <!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/build/intermediates/exploded-aar/校园通/slidingMenLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="selected_view" type="id"/>
+    <!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">校园通</string>
+    <string name="describe_hint">描述</string>
+    <string name="found">Found</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="list_no_data_found">暂时还未有招领信息</string>
+    <string name="list_no_data_lost">暂时还未有失物信息</string>
+    <string name="load_error">加载失败，点击重试</string>
+    <string name="lost">Lost</string>
+    <string name="message_search_hint">搜索…</string>
+    <string name="photo_hint">发表部门</string>
+    <string name="progress_loading">正在获取数据..</string>
+    <string name="title_activity_aliqrcode">ALIQRCodeActivity</string>
+    <string name="title_activity_bill_list">BillListActivity</string>
+    <string name="title_activity_gen_qrcode">GenQRCodeActivity</string>
+    <string name="title_activity_orders_entry">OrdersEntryActivity</string>
+    <string name="title_activity_pay_pal_un_synced_list">PayPalUnSyncedListActivity</string>
+    <string name="title_activity_refund_orders">RefundOrdersActivity</string>
+    <string name="title_activity_refund_status">RefundStatusActivity</string>
+    <string name="title_hint">标题</string>
+    <!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

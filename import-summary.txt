@@ -1,0 +1,107 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From SlidingMenLibrary:
+* LICENSE.txt
+* build.gradle
+* library.iml
+* pom.xml
+From 校园通:
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In SlidingMenLibrary:
+* AndroidManifest.xml => slidingMenLibrary\src\main\AndroidManifest.xml
+* assets\ => slidingMenLibrary\src\main\assets
+* res\ => slidingMenLibrary\src\main\res\
+* src\ => slidingMenLibrary\src\main\java\
+In XUtilsLibrary:
+* AndroidManifest.xml => xUtilsLibrary\src\main\AndroidManifest.xml
+* assets\ => xUtilsLibrary\src\main\assets
+* res\ => xUtilsLibrary\src\main\res
+* src\ => xUtilsLibrary\src\main\java\
+In 校园通:
+* AndroidManifest.xml => 校园通\src\main\AndroidManifest.xml
+* assets\ => 校园通\src\main\assets\
+* libs\alipaysdk.jar => 校园通\libs\alipaysdk.jar
+* libs\alipaysecsdk.jar => 校园通\libs\alipaysecsdk.jar
+* libs\alipayutdid.jar => 校园通\libs\alipayutdid.jar
+* libs\armeabi\libBaiduMapSDK_v3_3_0_15.so => 校园通\src\main\jniLibs\armeabi\libBaiduMapSDK_v3_3_0_15.so
+* libs\armeabi\liblocSDK5.so => 校园通\src\main\jniLibs\armeabi\liblocSDK5.so
+* libs\armeabi\libmsc.so => 校园通\src\main\jniLibs\armeabi\libmsc.so
+* libs\baidumapapi_v3_3_0.jar => 校园通\libs\baidumapapi_v3_3_0.jar
+* libs\beecloud.jar => 校园通\libs\beecloud.jar
+* libs\bmob_v3.1.0beta.jar => 校园通\libs\bmob_v3.1.0beta.jar
+* libs\bmobPush_0.1beta.jar => 校园通\libs\bmobPush_0.1beta.jar
+* libs\libammsdk.jar => 校园通\libs\libammsdk.jar
+* libs\locSDK_5.0.jar => 校园通\libs\locSDK_5.0.jar
+* libs\Msc.jar => 校园通\libs\Msc.jar
+* libs\mta-sdk-1.0.0.jar => 校园通\libs\mta-sdk-1.0.0.jar
+* libs\open_sdk.jar => 校园通\libs\open_sdk.jar
+* libs\PayPalAndroidSDK-2.9.11.jar => 校园通\libs\PayPalAndroidSDK-2.9.11.jar
+* libs\Sunflower.jar => 校园通\libs\Sunflower.jar
+* libs\UPPayAssistEx.jar => 校园通\libs\UPPayAssistEx.jar
+* libs\UPPayPluginEx.jar => 校园通\libs\UPPayPluginEx.jar
+* libs\zxing-3.2.0.jar => 校园通\libs\zxing-3.2.0.jar
+* res\ => 校园通\src\main\res\
+* src\ => 校园通\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

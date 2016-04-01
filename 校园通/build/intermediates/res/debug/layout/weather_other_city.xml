@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="wrap_content" android:layout_width="wrap_content"
+  android:orientation="horizontal"
+ android:gravity="center"
+ android:id="@+id/ws_dialog">
+ 
+ <EditText 
+  android:layout_height="wrap_content"
+  android:layout_width="wrap_content" 
+  android:id="@+id/ws_city_name" android:minWidth="200dip"/>
+</LinearLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/weather_other_city.xml -->

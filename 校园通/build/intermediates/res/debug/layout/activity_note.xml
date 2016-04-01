@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/top_ll" 
+	    android:orientation="horizontal"
+	    android:background="#17B3EC">
+
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/topButton"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dip"
+        android:background="#17B3EC"
+       
+        android:text="添加笔记" 
+        
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:id="@+id/number"
+        android:layout_width="55.0dip"
+        android:layout_height="55.0dip"
+        android:layout_marginRight="17.0dip"
+        android:background="@drawable/number"
+        android:textColor="#ffffffff" 
+        android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="446.0dip"
+        android:layout_below="@id/top_ll"
+        android:listSelector="#00000000"
+        android:cacheColorHint="@android:color/transparent" />
+
+</RelativeLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/activity_note.xml -->

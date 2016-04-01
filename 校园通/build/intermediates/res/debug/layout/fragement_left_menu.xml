@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical" >
+        
+        <ListView
+            android:id="@+id/lv_mine_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp" 
+            android:divider="#88000000">
+        </ListView>
+
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="2dp"
+            android:text="订单信息"
+            android:textColor="#FF8833"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF8833"/>
+        
+        
+        <ListView
+            android:id="@+id/lv_mine_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp"
+            android:divider="#88000000" >
+        </ListView>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="2dp"
+            android:text="其他"
+            android:textColor="#FF8833"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFF8833"/>
+        
+        <ListView
+            android:id="@+id/lv_mine_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:scrollbars="none"
+            android:dividerHeight="0.5dp"
+            android:divider="#88000000">
+        </ListView>
+        
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/fragement_left_menu.xml -->

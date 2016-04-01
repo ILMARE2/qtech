@@ -1,0 +1,3 @@
+include ':slidingMenLibrary'
+include ':xUtilsLibrary'
+include ':校园通'

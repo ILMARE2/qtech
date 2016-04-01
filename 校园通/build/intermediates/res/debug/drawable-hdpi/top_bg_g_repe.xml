@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<bitmap xmlns:android ="http://schemas.android.com/apk/res/android"  
+   android:src ="@drawable/index_bottom_g"  
+   android:tileMode ="repeat" />  
+<!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/drawable-hdpi/top_bg_g_repe.xml -->

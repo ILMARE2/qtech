@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+      
+        layout="@layout/header_title" />
+
+    <EditText 
+        android:id="@+id/et_title"
+        android:paddingLeft="10dp"
+        android:hint="@string/title_hint"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/input"
+        />
+
+    <EditText 
+        android:id="@+id/et_depart"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:layout_margin="10dp"      
+        android:maxLength="11"
+        android:hint="@string/photo_hint"
+        android:background="@drawable/input"
+        />
+
+    <EditText 
+        android:id="@+id/et_describe"
+        android:hint="@string/describe_hint"
+        android:background="@drawable/input"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minLines="4"
+        />
+    <EditText 
+        android:id="@+id/et_content"
+        android:hint="公告内容"
+        android:background="@drawable/input"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minLines="10"
+        />
+    
+</LinearLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/activity_add_news.xml -->

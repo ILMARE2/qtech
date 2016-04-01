@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="#FFFFFF"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <TextView 
+	  android:gravity="center"
+	  android:layout_width="46dp"
+	  android:layout_height="55dp"
+	  android:id="@+id/tvtext"
+	  />
+</LinearLayout>
+<!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/calendar_item.xml -->

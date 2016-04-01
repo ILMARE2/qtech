@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360" >
+   
+      <!-- rotate 旋转动画 包裹
+	      android:thickness="3dp" 圆环的厚度 
+	      android:innerRadius="12dp" 圆环的内半径
+	      android:useLevel="false"   当这个图形给progressbar用时 去掉动画
+          gradient：渐变
+       -->
+    <shape
+        android:innerRadius="12dp"
+        android:shape="ring"
+        android:thickness="3dp"
+        android:useLevel="false" >
+        <gradient
+            android:centerColor="#3f00"
+            android:endColor="#f00"
+            android:startColor="#fff" />
+    </shape>
+
+</rotate><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/drawable/custom_progress.xml -->

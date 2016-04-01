@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        android:background="#F5F5F5"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+      
+
+            <TextView
+                android:id="@+id/tv_good_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原味石锅"
+                android:textSize="16sp" />
+
+            <!-- 价格 -->
+
+            <TextView
+                android:id="@+id/tv_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥9.0"
+                android:textColor="#FF8833"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_buy_good"
+            android:layout_width="45dp"
+            android:layout_height="36dp"
+            android:padding="3dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#eb4e3d"
+            android:text="下单"
+            android:textSize="12sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/ANDROID_PROJECT/校园通/校园通/src/main/res/layout/goods_list_item.xml -->
